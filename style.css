@@ -217,11 +217,18 @@ a {
 
 /* Gallery */
 .gallery-item {
+    height: 250px;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
     transition: all 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .gallery-item:hover {
