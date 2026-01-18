@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Haven - Premium Fast Food & Desi Cuisine</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-fire text-warning"></i> Gourmet Haven
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center text-center">
+        <div class="hero-overlay"></div>
+        <div class="container relative-z-2">
+            <h1 class="display-3 fw-bold text-white animate-fade-up">Taste the Tradition & Heat</h1>
+            <p class="lead text-light mb-4 animate-fade-up delay-100">Premium Fast Food & Authentic Desi Cuisine</p>
+            <div class="animate-fade-up delay-200">
+                <a href="#menu" class="btn btn-primary btn-lg me-3">View Menu</a>
+                <a href="#reservation" class="btn btn-outline-light btn-lg">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-img-container">
+                        <!-- Placeholder for About Image -->
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center"
+                            style="height: 400px; width: 100%; border-radius: 10px;">
+                            <span class="h3">About Us Image</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="text-primary text-uppercase letter-spacing-2">About Us</h5>
+                    <h2 class="display-5 fw-bold mb-4">Cooking with Love and Passion</h2>
+                    <p class="lead text-muted">Welcome to Gourmet Haven, where tradition meets modern taste. We serve
+                        the finest fusion of zinger burgers and authentic desi karahis.</p>
+                    <p class="text-muted">Since our inception, we have been dedicated to bringing you the best culinary
+                        experience. From our spicy curries to our juicy burgers, every dish is prepared with the
+                        freshest ingredients and a touch of magic.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                <span>Fresh Ingredients</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                <span>Expert Chefs</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                <span>Fast Service</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                                <span>Halal Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-light-cream">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase letter-spacing-2">Discover Our Menu</h5>
+                <h2 class="display-5 fw-bold">Our Signature Dishes</h2>
+            </div>
+
+            <!-- Menu Filters -->
+            <div class="text-center mb-5">
+                <div class="btn-group" role="group" aria-label="Menu Filters">
+                    <button type="button" class="btn btn-outline-primary active filter-btn"
+                        data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="fast-food">Fast
+                        Food</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="desi">Desi
+                        Food</button>
+                </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="row g-4" id="menu-container">
+                <!-- Fast Food -->
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM1UIDxaBFo5Vw7UA3BA3EdzguRXRCixsMnw&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Classic Zinger</h5>
+                            <p class="card-text small text-muted flex-grow-1">Crispy fried chicken fillet with lettuce
+                                and mayo.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$8.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA7cCzP4IAm0flN4rpyRmJ1LQ_OBfdaqBWtw&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Spicy Beef Burger</h5>
+                            <p class="card-text small text-muted flex-grow-1">Juicy beef patty with jalapeños and spicy
+                                sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$10.50</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSApMIKdKAFpTMHAL4VSxpUJFRAEt3eAVq1SQ&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cheesy Loaded Fries</h5>
+                            <p class="card-text small text-muted flex-grow-1">Golden fries topped with melted cheddar
+                                and bacon bits.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$5.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKYXIGAjpRW121MWA_ugNQc3zsckceBH5kkw&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Club Sandwich</h5>
+                            <p class="card-text small text-muted flex-grow-1">Triple-decker sandwich with chicken, egg,
+                                and cheese.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$9.50</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBBdUtp1OVnhseslWFBlaFI9OnkniqMcZV6A&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chicken Tortilla Wrap</h5>
+                            <p class="card-text small text-muted flex-grow-1">Grilled chicken strips wrapped in a soft
+                                tortilla.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$7.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://ik.imagekit.io/smithfield/armour/4353bced-f940-00d0-8c6e-13a0a4a7f5c2/2ac60829-5178-4a6e-80cf-6ca43d862cee/Quick-and-Easy-Pepperoni-Pizza-700x700.jpeg?tr=w-1160,c-at_max,f-auto" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Pepperoni Pizza</h5>
+                            <p class="card-text small text-muted flex-grow-1">Classic tomato base topped with mozzarella
+                                and pepperoni.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$14.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://i.ytimg.com/vi/81ZnrUe_wQo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBgAt3F_UPTpsShjv1r-03X-qwDqg" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Crispy Nuggets (10pcs)</h5>
+                            <p class="card-text small text-muted flex-grow-1">Golden brown chicken nuggets with dipping
+                                sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$6.50</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://www.allrecipes.com/thmb/gTibTRJ8MW87L0jMhAvXPjIDD94=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/19402-quick-and-easy-alfredo-sauce-DDMFS-4x3-17abb2055c714807944172db9172b045.jpg" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Alfredo Pasta</h5>
+                            <p class="card-text small text-muted flex-grow-1">Creamy white sauce pasta with grilled
+                                chicken chunks.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$12.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSve7KjPiU8t-CIvwoR-BaYO5zhhJsjdv7IKQ&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Classic Chicken Burger</h5>
+                            <p class="card-text small text-muted flex-grow-1">Grilled chicken patty with fresh veggies.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$7.50</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHInimZAP820zSqDfO0p0IPV3HGth3VpJE-w&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">BBQ Chicken Pizza</h5>
+                            <p class="card-text small text-muted flex-grow-1">Smoky BBQ sauce, chicken chunks, and
+                                onions.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$15.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="fast-food">
+                    <div class="card menu-card h-100">
+                        <img src="https://stonehotpizza.com/wp-content/uploads/2019/08/Veggie-Delight-Pizza-HD.jpg" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Veggie Delight Pizza</h5>
+                            <p class="card-text small text-muted flex-grow-1">Loaded with bell peppers, mushrooms, and
+                                olives.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$13.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desi Food -->
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPcdlgGqTXb-qtbAK_WgscTy2TimgPjzn9fw&s" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chicken Biryani</h5>
+                            <p class="card-text small text-muted flex-grow-1">Aromatic basmati rice cooked with spicy
+                                chicken curry.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$11.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <img src="https://img-global.cpcdn.com/recipes/966ffc25a6a950a6/680x781cq80/beef-biryani-recipe-main-photo.jpg" alt="">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Beef Biryani</h5>
+                            <p class="card-text small text-muted flex-grow-1">Traditional Karachi style beef biryani.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$12.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>Nihari Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Beef Nihari</h5>
+                            <p class="card-text small text-muted flex-grow-1">Slow-cooked beef stew rich in spices and
+                                marrow.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$13.50</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>Karahi Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chicken Karahi</h5>
+                            <p class="card-text small text-muted flex-grow-1">Traditional wok-cooked chicken in tomato
+                                and ginger sauce.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$18.00</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>Beef Karahi Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Beef Karahi</h5>
+                            <p class="card-text small text-muted flex-grow-1">Tender beef cooked in black pepper and
+                                desi ghee.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$20.00</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>Kabab Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Seekh Kabab Platter</h5>
+                            <p class="card-text small text-muted flex-grow-1">Minced meat skewers grilled over charcoal.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$15.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>Tikka Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Chicken Tikka</h5>
+                            <p class="card-text small text-muted flex-grow-1">Quarter chicken leg marinated in yogurt
+                                and spices.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$9.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>Haleem Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Haleem</h5>
+                            <p class="card-text small text-muted flex-grow-1">Pastry-like stew of wheat, barley, meat
+                                and lentils.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$10.99</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>Handi Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mutton Handi</h5>
+                            <p class="card-text small text-muted flex-grow-1">Creamy mutton curry cooked in a clay pot.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$22.00</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 animate-fade-up menu-item" data-category="desi">
+                    <div class="card menu-card h-100">
+                        <div class="menu-img"><span>BBQ Placeholder</span></div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">BBQ Platter (Family)</h5>
+                            <p class="card-text small text-muted flex-grow-1">Assortment of tikka, kababs, and chops.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="price-tag">$35.00</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-5 section-overlay text-white" style="background-color: var(--secondary-color);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h5 class="text-warning text-uppercase letter-spacing-2">Book A Table</h5>
+                    <h2 class="display-5 fw-bold">Reservation</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="reservationForm" class="p-4 bg-white text-dark rounded shadow-lg">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="date" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="time" class="form-label">Time</label>
+                                <input type="time" class="form-control" id="time" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="guests" class="form-label">Guests</label>
+                                <select class="form-select" id="guests" required>
+                                    <option value="" selected>Select Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5+">5+ People</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Special Request</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="bookingSuccess" class="alert alert-success mt-3 d-none text-center">
+                        Your table has been booked successfully! We will contact you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase letter-spacing-2">Gallery</h5>
+                <h2 class="display-5 fw-bold">Our Atmosphere</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item" style="height: 250px; background-color: #ddd;"></div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item" style="height: 250px; background-color: #ccc;"></div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item" style="height: 250px; background-color: #bbb;"></div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item" style="height: 250px; background-color: #aaa;"></div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item" style="height: 250px; background-color: #999;"></div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="gallery-item" style="height: 250px; background-color: #888;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 bg-light-cream">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase letter-spacing-2">Testimonials</h5>
+                <h2 class="display-5 fw-bold">What Our Customers Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="card-text">"The Best Zinger Burger in town! The crispiness is unmatched and the
+                                sauce is to die for."</p>
+                            <h6 class="fw-bold mt-3">- Ali Khan</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-half"></i>
+                            </div>
+                            <p class="card-text">"Authentic Desi taste. The Chicken Karahi reminded me of homemade food.
+                                Highly recommended!"</p>
+                            <h6 class="fw-bold mt-3">- Sarah Ahmed</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm p-4 h-100">
+                        <div class="card-body text-center">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="card-text">"Great ambiance and service. The Beef Biryani is a must-try. Will
+                                definitely come back."</p>
+                            <h6 class="fw-bold mt-3">- Bilal T.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h5 class="text-primary text-uppercase letter-spacing-2">Contact Us</h5>
+                    <h2 class="display-5 fw-bold mb-4">Get In Touch</h2>
+                    <p class="lead mb-4">Have a question or want to order? Visit us or give us a call.</p>
+
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-primary fs-4"><i class="bi bi-geo-alt-fill"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Location</h6>
+                            <p class="text-muted">123 Food Street, Flavor Town, City</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-primary fs-4"><i class="bi bi-telephone-fill"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Phone</h6>
+                            <p class="text-muted">+123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="me-3 text-primary fs-4"><i class="bi bi-envelope-fill"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email</h6>
+                            <p class="text-muted">info@gourmethaven.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Placeholder Map -->
+                    <div class="bg-secondary rounded"
+                        style="width: 100%; height: 300px; display: flex; align-items: center; justify-content: center; color: white;">
+                        <span class="h4">Google Map Embed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="text-warning mb-3">Gourmet Haven</h4>
+                    <p class="text-light">Experience the best of both worlds with our premium fast food and authentic
+                        desi cuisine.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Opening Hours</h5>
+                    <ul class="list-unstyled text-light">
+                        <li>Mon - Fri: 11:00 AM - 11:00 PM</li>
+                        <li>Sat - Sun: 10:00 AM - 12:00 AM</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-white mb-3">Follow Us</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-warning fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-warning fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-warning fs-4"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-light">
+                <p class="mb-0">&copy; 2026 Gourmet Haven. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
